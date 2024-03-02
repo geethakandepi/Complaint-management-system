@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Complaint Management System</title>
+    <link rel="stylesheet" >
+</head>
+
+<body>
+    <header>
+        <h1><center>Online Complaint Management System</h1></center>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#submit-complaint">Submit Complaint</a></li>
+            <li><a href="#track-complaint">Track Complaint</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="welcome">
+            <h2>Welcome to the Online Complaint Management System</h2>
+        </section>
+        <section id="submit-complaint">
+            <h2>Submit a Complaint</h2>
+            <p>Please fill out the form below and click submit to lodge your complaint.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="">Select a Category</option>
+                    <option value="service">Service</option>
+                    <option value="product">Product</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="5" cols="50" required></textarea><br><br>
+                <input type="submit" value="Submit Complaint">
+            </form>
+        </section>
+        <section id="track-complaint">
+            <h2>Track Your Complaint</h2>
+            <p>Enter your complaint ID or search by other criteria to track its status.</p>
+            <form>
+                <label for="complaint-id">Complaint ID:</label>
+                <input type="text" id="complaint-id" name="complaint-id"><br><br>
+                <input type="submit" value="Track Complaint">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
